@@ -1,0 +1,41 @@
+---
+import Container from "./Container.astro"
+
+const items = [
+  {
+    label: "Features",
+    link: "#features",
+  },
+  {
+    label: "How It Works",
+    link: "#how-it-works",
+  },
+  {
+    label: "Beta Access",
+    link: "#join-beta",
+  },
+  {
+    label: "Contact",
+    link: "#contact",
+  },
+];
+---
+
+<div class="bg-gray-900 py-12 text-white">
+  <Container class="flex items-center justify-between" small>
+    <a href="/" class="font-bold">Razom &copy; 2023</a>
+
+    <ul class="hidden gap-x-2 md:flex">
+      {items.map(({ label, link }) => (
+        <li>
+          <a
+            href={link}
+            class="whitespace-nowrap rounded-full px-4 py-2 font-medium opacity-50 hover:bg-white/5 hover:opacity-100"
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </Container>
+</div>

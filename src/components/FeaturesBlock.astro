@@ -1,0 +1,34 @@
+---
+import Container from "./Container.astro"
+import FeatureItem from "./FeatureItem.astro"
+import Highlight from "./Highlight.astro"
+---
+<div class="bg-slate-50 text-black">
+  <Container class="py-24 md:py-48" small>
+    <h2 class="mb-16 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:mb-24 md:text-7xl">
+      Discover the Power of
+      <span class="text-brand-500">Razom</span>
+      🦾
+    </h2>
+
+    <div class="space-y-8 lg:space-y-12 lg:divide-y">
+      <FeatureItem icon="🏗️" title="Any Stage">
+        <p>
+          Whether you're just beginning with an <Highlight>idea</Highlight>, have an <Highlight>MVP</Highlight>, or are running an <Highlight>existing business</Highlight>, Razom is here to support you. Connect with like-minded individuals who can help you elevate your venture to new heights.
+        </p>
+      </FeatureItem>
+
+      <div class="pt-8 lg:pt-12">
+        <FeatureItem icon="🧪" title="Any Industry">
+          <p>From <Highlight>cutting-edge startups</Highlight> to cozy <Highlight>homemade cookie businesses</Highlight>, Razom is here for dreamers in every industry. Connect with partners, investors, and friends who share your excitement and bring fresh ideas and know-how to your venture.</p>
+        </FeatureItem>
+      </div>
+
+      <div class="pt-8 lg:pt-12">
+        <FeatureItem icon="🌎" title="Any Location">
+          <p>Whether you're in the <Highlight>same city</Highlight> or on the <Highlight>other side of the world</Highlight>, Razom is here to connect you with the people you need to succeed. Connect with people who share your passion and can help you take your venture to the next level.</p>
+        </FeatureItem>
+      </div>
+    </div>
+  </Container>
+</div>

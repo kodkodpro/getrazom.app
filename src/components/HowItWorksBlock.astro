@@ -1,0 +1,26 @@
+---
+import Container from "./Container.astro"
+import HowItWorksItem from "./HowItWorksItem.astro"
+---
+<div class="bg-slate-50 py-24 text-black">
+  <Container class="space-y-20">
+    <div class="text-center">
+      <h2 class="mb-2 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:mb-4 md:text-7xl">
+        How It Works
+      </h2>
+      <p class="text-xl text-slate-600 md:text-2xl">Just 3 simple steps</p>
+    </div>
+
+    <HowItWorksItem number="1" icon="💡" title="Publish your project or idea">
+      Share your brilliant idea or project with the Razom community
+    </HowItWorksItem>
+
+    <HowItWorksItem number="2" icon="👯‍♂️" title="Find like-minded enthusiasts">
+      Discover and connect with enthusiastic individuals who share your passion
+    </HowItWorksItem>
+
+    <HowItWorksItem number="3" icon="🏗️" title="Team up and create together">
+      Collaborate, innovate, and bring your dreams to life as a team
+    </HowItWorksItem>
+  </Container>
+</div>

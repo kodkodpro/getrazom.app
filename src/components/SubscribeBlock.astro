@@ -1,0 +1,32 @@
+---
+import Container from "./Container.astro"
+import Waves from "./Waves.astro"
+---
+<Waves bgColor="bg-slate-50" />
+
+<div class="bg-brand-500 flex items-center justify-center py-24 text-white md:py-36">
+  <Container small>
+    <h2 class="mb-8 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:mb-16 md:text-7xl">
+      Are You Ready to Chase Your Dreams?
+    </h2>
+
+    <p class="mb-8 text-center font-medium text-white md:mb-16 md:text-2xl">
+      Get early access to Razom's platform and start connecting with enthusiasts just like you
+    </p>
+
+    <form class="relative mx-auto w-full max-w-[540px]">
+      <input
+        name="email"
+        placeholder="Your Email"
+        type="email"
+        class="focus:ring-brand-600 w-full rounded-full bg-white px-8 py-6 pr-24 text-xl font-medium text-slate-800 focus:outline-none focus:ring-2 md:text-2xl"
+        >
+
+      <button
+        class="absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 rounded-full bg-indigo-500 text-2xl font-bold transition duration-200 ease-in-out hover:scale-105 hover:bg-indigo-600 active:scale-95"
+      >
+        &rarr;
+      </button>
+    </form>
+  </Container>
+</div>
