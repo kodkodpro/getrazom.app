@@ -1,6 +1,10 @@
 ---
 import Container from "./Container.astro"
 import Waves from "./Waves.astro"
+
+const MAILCHIMP_FORM_URL = import.meta.env.PUBLIC_MAILCHIMP_FORM_URL
+const MAILCHIMP_ANTISPAM = import.meta.env.PUBLIC_MAILCHIMP_ANTISPAM
+const MAILCHIMP_TAGS = import.meta.env.PUBLIC_MAILCHIMP_TAGS
 ---
 <Waves bgColor="bg-slate-50" />
 
@@ -15,7 +19,7 @@ import Waves from "./Waves.astro"
     </p>
 
     <form
-      action="https://app.us18.list-manage.com/subscribe/post?u=6c3647ce1a45a0ed6cf127816&id=939087d9d7&f_id=00eb1be7f0"
+      action={MAILCHIMP_FORM_URL}
       method="post"
       target="_self"
       class="relative mx-auto w-full max-w-[540px]"
@@ -27,13 +31,15 @@ import Waves from "./Waves.astro"
         class="focus:ring-brand-600 w-full rounded-full bg-white px-8 py-6 pr-24 text-xl font-medium text-slate-800 focus:outline-none focus:ring-2 md:text-2xl"
       >
 
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_6c3647ce1a45a0ed6cf127816_939087d9d7" tabindex="-1" value="">
+      <div class="hidden">
+        <input type="hidden" name="tags" value={MAILCHIMP_TAGS}>
       </div>
 
-      <button
-        class="absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 rounded-full bg-indigo-500 text-2xl font-bold transition duration-200 ease-in-out hover:scale-105 hover:bg-indigo-600 active:scale-95"
-      >
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name={MAILCHIMP_ANTISPAM} tabindex="-1" value="">
+      </div>
+
+      <button class="absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 rounded-full bg-indigo-500 text-2xl font-bold transition duration-200 ease-in-out hover:scale-105 hover:bg-indigo-600 active:scale-95">
         &rarr;
       </button>
     </form>
