@@ -1,9 +1,7 @@
-import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import image from "@astrojs/image";
-import mdx from "@astrojs/mdx";
-
-import partytown from "@astrojs/partytown";
+import { defineConfig } from "astro/config"
+import tailwind from "@astrojs/tailwind"
+import image from "@astrojs/image"
+import mdx from "@astrojs/mdx"
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,12 +9,7 @@ export default defineConfig({
     mdx(),
     tailwind(),
     image({
-      serviceEntryPoint: '@astrojs/image/sharp'
+      serviceEntryPoint: "@astrojs/image/sharp",
     }),
-    partytown({
-      config: {
-        forward: ["dataLayer.push"]
-      },
-    }),
-  ]
-});
+  ],
+})

@@ -18,12 +18,7 @@ const GA_ID = import.meta.env.PUBLIC_GA_ID;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
 
-    {GA_ID && (
-      <script
-        type="text/partytown"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-      ></script>
-    )}
+    {GA_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
   </head>
   <body class="w-screen overflow-x-hidden antialiased bg-gray-900">
     <slot />
