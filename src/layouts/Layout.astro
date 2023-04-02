@@ -37,6 +37,18 @@ const GA_ID = import.meta.env.PUBLIC_GA_ID;
   </head>
   <body class="w-screen overflow-x-hidden bg-slate-900 antialiased font-sans">
     <slot />
+
+    <script>
+      document.querySelectorAll("a[href^='#']").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault()
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          })
+        })
+      })
+    </script>
   </body>
 </html>
 

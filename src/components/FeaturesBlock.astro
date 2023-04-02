@@ -5,6 +5,7 @@ import { Trans } from "astro-i18next/components"
 import Container from "./Container.astro"
 import FeatureItem from "./FeatureItem.astro"
 import Highlight from "./Highlight.astro"
+import ButtonLink from "./ButtonLink.astro"
 ---
 <div id="features" class="bg-slate-50 text-black dark:bg-slate-800 dark:text-slate-400">
   <Container class="py-24 md:py-48" small>
@@ -42,6 +43,12 @@ import Highlight from "./Highlight.astro"
           </Trans>
         </p>
       </FeatureItem>
+    </div>
+
+    <div class="text-center mt-12 md:mt-16">
+      <ButtonLink href="#join-beta">
+        {t("hero.button")}
+      </ButtonLink>
     </div>
   </Container>
 </div>
