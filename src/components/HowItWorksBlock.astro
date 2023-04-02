@@ -1,26 +1,30 @@
 ---
+import { t } from "i18next"
+
 import Container from "./Container.astro"
 import HowItWorksItem from "./HowItWorksItem.astro"
 ---
-<div class="bg-slate-50 py-24 text-black dark:bg-slate-800 dark:text-white">
+<div id="how-it-works" class="bg-slate-50 py-24 text-black dark:bg-slate-800 dark:text-slate-200">
   <Container class="space-y-20">
     <div class="text-center">
       <h2 class="mb-2 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:mb-4 md:text-7xl">
-        How It Works
+        {t("howItWorks.title")}
       </h2>
-      <p class="text-xl text-slate-600 dark:text-slate-300 md:text-2xl">Just 3 simple steps</p>
+      <p class="text-xl text-slate-600 dark:text-slate-300 md:text-2xl">
+        {t("howItWorks.subTitle")}
+      </p>
     </div>
 
-    <HowItWorksItem number="1" icon="💡" title="Publish your project or idea">
-      Share your brilliant idea or project with the Razom community
+    <HowItWorksItem number="1" icon="💡" title={t("howItWorks.first.title")}>
+      {t("howItWorks.first.description")}
     </HowItWorksItem>
 
-    <HowItWorksItem number="2" icon="👯‍♂️" title="Find like-minded enthusiasts">
-      Discover and connect with enthusiastic individuals who share your passion
+    <HowItWorksItem number="2" icon="👯‍♂️" title={t("howItWorks.second.title")}>
+      {t("howItWorks.second.description")}
     </HowItWorksItem>
 
-    <HowItWorksItem number="3" icon="🏗️" title="Team up and create together">
-      Collaborate, innovate, and bring your dreams to life as a team
+    <HowItWorksItem number="3" icon="🏗️" title={t("howItWorks.third.title")}>
+      {t("howItWorks.third.description")}
     </HowItWorksItem>
   </Container>
 </div>

@@ -1,0 +1,75 @@
+{
+  "site": {
+    "title": "Razom — Where Enthusiasts Unite and Dreams Take Flight",
+    "description": "The ultimate platform for connecting enthusiasts from various industries to collaborate on exciting projects. From tech startups to homemade cookie businesses, find like-minded partners, investors, and friends to bring your dreams to life. Join our community and start building your future together!"
+  },
+
+  "navbar": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "betaAccess": "Beta Access",
+    "contact": "Contact"
+  },
+
+  "hero": {
+    "title": "Where Enthusiasts Unite and Dreams Take Flight",
+    "subTitle": "Razom connects ordinary people like you and me and helps them build cool products",
+    "button": "Join the Private Beta"
+  },
+
+  "features": {
+    "title": "Discover the Power of <0>Razom</0> \uD83E\uDDBE",
+
+    "first": {
+      "title": "Any Stage",
+      "description": "Whether you're just beginning with an <0>idea</0>, have an <1>MVP</1>, or are running an <2>existing business</2>, Razom is here to support you. Connect with like-minded individuals who can help you elevate your venture to new heights."
+    },
+
+    "second": {
+      "title": "Any Industry",
+      "description": "From <0>cutting-edge startups</0> to cozy <1>homemade cookie businesses</1>, Razom is here for dreamers in every industry. Connect with partners, investors, and friends who share your excitement and bring fresh ideas and know-how to your venture."
+    },
+
+    "third": {
+      "title": "Any Location",
+      "description": "Whether you're in the <0>same city</0> or on the <1>other side of the world</1>, Razom is here to connect you with the people you need to succeed. Connect with people who share your passion and can help you take your venture to the next level."
+    }
+  },
+
+  "quote": {
+    "firstLine": "If you want to go fast, go alone.",
+    "secondLine": "If you want to go far, go <0>Razom</0>",
+    "description": "<0>Razom</0> is a Ukrainian word meaning <1>together</1>"
+  },
+
+  "howItWorks": {
+    "title": "How It Works",
+    "subTitle": "Just 3 simple steps to get started",
+
+    "first": {
+      "title": "Publish your project or idea",
+      "description": "Share your brilliant idea or project with the Razom community"
+    },
+
+    "second": {
+      "title": "Find like-minded enthusiasts",
+      "description": "Discover and connect with enthusiastic individuals who share your passion"
+    },
+
+    "third": {
+      "title": "Team up and create together",
+      "description": "Collaborate, innovate, and bring your dreams to life as a team"
+    }
+  },
+
+  "subscribe": {
+    "title": "Are You Ready to Chase Your Dreams?",
+    "subTitle": "Get early access to Razom's platform and start connecting with enthusiasts just like you",
+    "emailPlaceholder": "Your Email"
+  },
+
+  "fromCreator": {
+    "title": "From Creator",
+    "text":"<0>Hey there, I'm Andrew, the person behind Razom. For over a decade, I struggled to find partners and like-minded people to share my business dreams with. As an introvert with ADHD, I found it challenging to network and connect with others who shared my passion.</0><1>My journey led me to create Razom, a platform that empowers enthusiasts like me to find their tribe and collaborate on amazing projects, without the stress of traditional networking. Razom is designed to make it simple and enjoyable for everyone – whether you're an introvert, have ADHD, or simply crave a more relaxed way of connecting with others.</1><2>I'm excited to share Razom with you, and I hope it helps you find the support, partnerships, and friendships you need to bring your ideas to life. Let's create something extraordinary together!</2>"
+  }
+}

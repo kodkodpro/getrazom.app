@@ -1,24 +1,27 @@
 ---
+import { t } from "i18next"
+
+import LanguageSwitcher from "./LanguageSwitcher.astro"
 import Container from "./Container.astro"
 
 const items = [
   {
-    label: "Features",
+    label: t("navbar.features"),
     link: "#features",
   },
   {
-    label: "How It Works",
+    label: t("navbar.howItWorks"),
     link: "#how-it-works",
   },
   {
-    label: "Beta Access",
+    label: t("navbar.betaAccess"),
     link: "#join-beta",
   },
   {
-    label: "Contact",
+    label: t("navbar.contact"),
     link: "#contact",
   },
-];
+]
 ---
 
 
@@ -41,12 +44,5 @@ const items = [
     ))}
   </ul>
 
-  <div class="hidden lg:block">
-    <a
-      href="#join-beta"
-      class="whitespace-nowrap rounded-full bg-white/5 px-5 py-2.5 text-xl font-semibold text-white hover:bg-white/10"
-    >
-      Join the Private Beta
-    </a>
-  </div>
+  <LanguageSwitcher />
 </Container>

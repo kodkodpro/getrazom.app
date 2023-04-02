@@ -1,4 +1,7 @@
 ---
+import i18next, { t } from "i18next"
+import { Trans } from "astro-i18next/components"
+
 import Container from "./Container.astro"
 import Waves from "./Waves.astro"
 ---
@@ -7,15 +10,20 @@ import Waves from "./Waves.astro"
 <div class="flex items-center justify-center bg-slate-200 py-48 text-black dark:bg-slate-400">
   <Container small>
     <div class="-skew-x-6 -skew-y-3 text-center">
-      <p class="mb-2 font-serif text-xl text-slate-800 sm:text-3xl md:text-4xl lg:mb-6 lg:text-6xl">
-        If you want to go fast, go alone.<br>
-        If you want to go far, go <span class="bg-brand-500 px-1 font-medium text-white md:px-2">Razom</span>
+      <p class="font-serif text-xl text-slate-800 sm:text-3xl md:text-4xl lg:text-5xl">
+        {t("quote.firstLine")}<br>
+        <Trans i18nKey="quote.secondLine">
+          <span class="bg-brand-500 px-1 font-medium text-white md:px-2"></span>
+        </Trans>
       </p>
-      <p class="text-sm text-slate-700 dark:text-slate-800 sm:text-base md:text-lg lg:text-xl">
-        <span class="font-medium">Razom</span>
-        is an Ukrainian word meaning
-        "<span class="font-medium">together</span>"
-      </p>
+      {i18next.language !== "ua" && (
+        <p class="mt-2 lg:mt-6 text-sm text-slate-700 dark:text-slate-800 sm:text-base md:text-lg lg:text-xl">
+          <Trans i18nKey="quote.description">
+            <span class="font-medium"></span>
+            <span class="font-medium"></span>
+          </Trans>
+        </p>
+      )}
     </div>
   </Container>
 </div>

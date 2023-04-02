@@ -1,24 +1,26 @@
 ---
+import { t } from "i18next"
+
 import Container from "./Container.astro"
 
 const items = [
   {
-    label: "Features",
+    label: t("navbar.features"),
     link: "#features",
   },
   {
-    label: "How It Works",
+    label: t("navbar.howItWorks"),
     link: "#how-it-works",
   },
   {
-    label: "Beta Access",
+    label: t("navbar.betaAccess"),
     link: "#join-beta",
   },
   {
-    label: "Contact",
+    label: t("navbar.contact"),
     link: "#contact",
   },
-];
+]
 ---
 
 <div class="bg-slate-900 py-12 text-white">

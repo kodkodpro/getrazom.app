@@ -1,0 +1,23 @@
+---
+import { t, changeLanguage } from "i18next";
+import Layout from "../../layouts/Layout.astro";
+import HeaderBlock from "../../components/HeaderBlock.astro";
+import FeaturesBlock from "../../components/FeaturesBlock.astro";
+import QuoteBlock from "../../components/QuoteBlock.astro";
+import HowItWorksBlock from "../../components/HowItWorksBlock.astro";
+import SubscribeBlock from "../../components/SubscribeBlock.astro";
+import FromCreatorBlock from "../../components/FromCreatorBlock.astro";
+import FooterBlock from "../../components/FooterBlock.astro";
+
+changeLanguage("ua");
+---
+
+<Layout title={t("site.title")}>
+  <HeaderBlock />
+  <FeaturesBlock />
+  <QuoteBlock />
+  <HowItWorksBlock />
+  <SubscribeBlock />
+  <FromCreatorBlock />
+  <FooterBlock />
+</Layout>
