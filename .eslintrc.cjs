@@ -73,4 +73,11 @@ module.exports = {
       },
     },
   ],
+
+  settings: {
+    tailwindcss: {
+      // The path to the Tailwind config file
+      config: "./tailwind.config.cjs",
+    },
+  },
 }

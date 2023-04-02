@@ -3,12 +3,12 @@ const { icon, title } = Astro.props
 ---
 <div class="flex flex-col items-center gap-2 sm:gap-4 lg:flex-row lg:gap-10">
   <div class="shrink-0 text-3xl font-bold tracking-tight md:text-4xl lg:w-1/3">
-    <div class="border-brand-500 pb-4 text-center lg:text-right">
+    <div class="border-brand-500 pb-4 text-center dark:text-slate-200 lg:text-right">
       <span class="mb-2 inline-block">{icon}</span><br>
       {title}
     </div>
   </div>
-  <div class="text-lg lg:border-l-4 lg:border-slate-200 lg:py-2 lg:pl-8">
+  <div class="text-lg lg:border-l-4 lg:border-slate-200 lg:py-2 lg:pl-8 dark:lg:border-slate-700">
     <slot />
   </div>
 </div>

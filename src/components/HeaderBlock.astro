@@ -1,14 +1,12 @@
 ---
 import Navbar from "./Navbar.astro"
-import ButtonLink from "./ButtonLink.astro"
 import Waves from "./Waves.astro"
-import Container from "./Container.astro"
 import Hero from "./Hero.astro";
 ---
 
-<div class="flex h-[85vh] flex-col bg-gray-900 text-white">
+<div class="flex h-[85vh] flex-col bg-slate-900 text-slate-200">
   <Navbar />
   <Hero />
 </div>
 
-<Waves wavesColor="fill-gray-900" flip />
+<Waves wavesColor="fill-slate-900" bgColor="bg-slate-50 dark:bg-slate-800" flip />

@@ -6,15 +6,15 @@ const MAILCHIMP_FORM_URL = import.meta.env.PUBLIC_MAILCHIMP_FORM_URL
 const MAILCHIMP_ANTISPAM = import.meta.env.PUBLIC_MAILCHIMP_ANTISPAM
 const MAILCHIMP_TAGS = import.meta.env.PUBLIC_MAILCHIMP_TAGS
 ---
-<Waves bgColor="bg-slate-50" />
+<Waves wavesColor="fill-brand-500 dark:fill-slate-400" bgColor="bg-slate-50 dark:bg-slate-800" />
 
-<div class="bg-brand-500 flex items-center justify-center py-24 text-white md:py-36">
+<div class="flex items-center justify-center bg-brand-500 py-24 text-white dark:bg-slate-400 dark:text-slate-800 md:py-36">
   <Container small>
     <h2 class="mb-8 text-center text-4xl font-extrabold tracking-tight sm:text-5xl md:mb-16 md:text-7xl">
       Are You Ready to Chase Your Dreams?
     </h2>
 
-    <p class="mb-8 text-center font-medium text-white md:mb-16 md:text-2xl">
+    <p class="mb-8 text-center font-medium dark:text-slate-700 md:mb-16 md:text-2xl">
       Get early access to Razom's platform and start connecting with enthusiasts just like you
     </p>
 
@@ -28,8 +28,8 @@ const MAILCHIMP_TAGS = import.meta.env.PUBLIC_MAILCHIMP_TAGS
         type="email"
         name="EMAIL"
         placeholder="Your Email"
-        class="focus:ring-brand-600 w-full rounded-full bg-white px-8 py-6 pr-24 text-xl font-medium text-slate-800 focus:outline-none focus:ring-2 md:text-2xl"
-      >
+        class="w-full rounded-full bg-white px-8 py-6 pr-24 text-xl font-medium text-slate-800 ring-4 ring-brand-500 placeholder:text-slate-500 focus:outline-none focus:ring-2 dark:bg-slate-300 md:text-2xl"
+        >
 
       <div class="hidden">
         <input type="hidden" name="tags" value={MAILCHIMP_TAGS}>
@@ -39,7 +39,7 @@ const MAILCHIMP_TAGS = import.meta.env.PUBLIC_MAILCHIMP_TAGS
         <input type="text" name={MAILCHIMP_ANTISPAM} tabindex="-1" value="">
       </div>
 
-      <button class="absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 rounded-full bg-indigo-500 text-2xl font-bold transition duration-200 ease-in-out hover:scale-105 hover:bg-indigo-600 active:scale-95">
+      <button class="absolute right-2 top-1/2 h-16 w-16 -translate-y-1/2 rounded-full bg-indigo-500 text-2xl font-bold transition duration-200 ease-in-out hover:scale-105 hover:bg-indigo-600 active:scale-95 dark:bg-brand-500 dark:text-white dark:hover:bg-brand-600">
         &rarr;
       </button>
     </form>

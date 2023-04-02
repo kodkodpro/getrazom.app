@@ -24,11 +24,11 @@ const items = [
 
 
 <Container class="flex items-center justify-between py-6">
-  <a href="/" class="-translate-y-[5px] text-4xl font-bold tracking-tighter">
+  <a href="/" class="translate-y-[-5px] text-4xl font-bold tracking-tighter text-white">
     Razom
   </a>
 
-  <ul class="hidden lg:gap-x-2 md:flex">
+  <ul class="hidden md:flex lg:gap-x-2">
     {items.map(({ label, link }) => (
       <li>
         <a
@@ -44,7 +44,7 @@ const items = [
   <div class="hidden lg:block">
     <a
       href="#join-beta"
-      class="whitespace-nowrap rounded-full bg-white/5 px-5 py-2.5 text-xl font-semibold hover:bg-white/10"
+      class="whitespace-nowrap rounded-full bg-white/5 px-5 py-2.5 text-xl font-semibold text-white hover:bg-white/10"
     >
       Join the Private Beta
     </a>
