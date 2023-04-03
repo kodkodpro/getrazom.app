@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src --ext .js,.jsx,.ts,.tsx,.astro"
+    "lint": "eslint . --ext .js,.cjs,.jsx,.ts,.tsx,.astro"
   },
   "dependencies": {
     "@astrojs/image": "^0.16.4",
